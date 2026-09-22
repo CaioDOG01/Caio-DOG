@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trabalho de Informática</title>
+
+<script>
+
+function mostrarFormulario() {
+    var formulario = document.getElementById("formulario");
+
+    if (formulario.style.display === "none") {
+        formulario.style.display = "block";
+    } else {
+        formulario.style.display = "none";
+    }
+}
+
+function enviarFormulario(event) {
+    event.preventDefault();
+
+    document.getElementById("mensagem").innerHTML =
+        "✅ Formulário enviado com sucesso!";
+
+    document.getElementById("mensagem").style.display = "block";
+}
+
+
+/* LINK 1 */
+
+function curiosidades() {
+
+    document.getElementById("site").srcdoc = `
+
+    <!DOCTYPE html>
+    <html>
+
+    <body style="font-family:Arial; padding:25px;">
+
+    <h1>Curiosidades sobre Cristiano Ronaldo</h1>
+
+    <h3>1 - Origem do nome</h3>
+    <p>
+    O nome Ronaldo foi escolhido em homenagem ao ex-presidente
+    dos Estados Unidos Ronald Reagan.
+    </p>
+
+    <h3>2 - Problema no coração</h3>
+    <p>
+    Quando era adolescente, Cristiano Ronaldo passou por um
+    procedimento médico relacionado ao coração.
+    </p>
+
+    <h3>3 - O número 7</h3>
+    <p>
+    O número 7 se tornou uma das principais marcas da carreira
+    de Cristiano Ronaldo.
+    </p>
+
+    <h3>4 - Apelido CR7</h3>
+    <p>
+    O apelido CR7 surgiu da combinação das iniciais de Cristiano
+    Ronaldo com o número 7.
+    </p>
+
+    </body>
+    </html>
+
+    `;
+}
+
+
+/* LINK 2 */
+
+function biografia() {
+
+    document.getElementById("site").srcdoc = `
+
+    <!DOCTYPE html>
+    <html>
+
+    <body style="font-family:Arial; padding:25px;">
+
+    <h1>Biografia de Cristiano Ronaldo</h1>
+
+    <p>
+    Cristiano Ronaldo dos Santos Aveiro nasceu em
+    5 de fevereiro de 1985, na cidade do Funchal,
+    na ilha da Madeira, Portugal.
+    </p>
+
+    <p>
+    Desde criança demonstrou interesse e talento para o futebol.
+    Começou sua formação no futebol português e posteriormente
+    passou a atuar em grandes clubes europeus.
+    </p>
+
+    <p>
+    Durante sua carreira, tornou-se um dos jogadores portugueses
+    mais conhecidos internacionalmente.
+    </p>
+
+    </body>
+    </html>
+
+    `;
+}
+
+
+/* LINK 3 */
+
+function carreira() {
+
+    document.getElementById("site").srcdoc = `
+
+    <!DOCTYPE html>
+    <html>
+
+    <body style="font-family:Arial; padding:25px;">
+
+    <h1>Carreira de Cristiano Ronaldo</h1>
+
+    <h3>Sporting</h3>
+
+    <p>
+    Cristiano Ronaldo iniciou sua carreira profissional
+    no Sporting Clube de Portugal.
+    </p>
+
+    <h3>Manchester United</h3>
+
+    <p>
+    Depois chamou a atenção do Manchester United,
+    onde ganhou destaque no futebol inglês.
+    </p>
+
+    <h3>Real Madrid</h3>
+
+    <p>
+    No Real Madrid, Ronaldo viveu uma das fases mais
+    importantes de sua carreira e marcou muitos gols.
+    </p>
+
+    <h3>Juventus</h3>
+
+    <p>
+    Depois atuou pela Juventus, na Itália.
+    </p>
+
+    <h3>Portugal</h3>
+
+    <p>
+    Pela seleção portuguesa, tornou-se um dos principais
+    jogadores da história do país.
+    </p>
+
+    </body>
+    </html>
+
+    `;
+}
+
+
+/* LINK 4 */
+
+function titulos() {
+
+    document.getElementById("site").srcdoc = `
+
+    <!DOCTYPE html>
+    <html>
+
+    <body style="font-family:Arial; padding:25px;">
+
+    <h1>Títulos e conquistas</h1>
+
+    <h3>Seleção Portuguesa</h3>
+
+    <p>
+    Cristiano Ronaldo conquistou títulos importantes
+    representando Portugal.
+    </p>
+
+    <h3>Champions League</h3>
+
+    <p>
+    Ronaldo conquistou a UEFA Champions League
+    durante sua carreira por clubes europeus.
+    </p>
+
+    <h3>Campeonatos nacionais</h3>
+
+    <p>
+    Também conquistou campeonatos nacionais em diferentes
+    países durante sua carreira.
+    </p>
+
+    <h3>Prêmios individuais</h3>
+
+    <p>
+    Cristiano Ronaldo recebeu diversos prêmios individuais
+    ao longo de sua carreira.
+    </p>
+
+    </body>
+    </html>
+
+    `;
+}
+
+
+/* LINK 5 */
+
+function recordes() {
+
+    document.getElementById("site").srcdoc = `
+
+    <!DOCTYPE html>
+    <html>
+
+    <body style="font-family:Arial; padding:25px;">
+
+    <h1>Recordes de Cristiano Ronaldo</h1>
+
+    <h3>Gols</h3>
+
+    <p>
+    Cristiano Ronaldo possui uma longa lista de recordes
+    relacionados a gols no futebol.
+    </p>
+
+    <h3>Champions League</h3>
+
+    <p>
+    O jogador possui diversos recordes históricos
+    relacionados à UEFA Champions League.
+    </p>
+
+    <h3>Seleção portuguesa</h3>
+
+    <p>
+    Ronaldo também estabeleceu importantes marcas
+    representando a seleção de Portugal.
+    </p>
+
+    <h3>Carreira internacional</h3>
+
+    <p>
+    Sua carreira internacional é marcada por grande
+    quantidade de jogos e gols pela seleção portuguesa.
+    </p>
+
+    </body>
+    </html>
+
+    `;
+}
+
+</script>
+</head>
+
+
+<body style="margin:0; font-family:Arial;">
+
+<table border="1" width="100%" style="text-align:center;">
+
+<tr>
+
+<!-- CÉLULA 1 -->
+
+<td width="30%" height="150"
+    style="
+    background:linear-gradient(135deg, #061a40, #0b3d91, #d4af37);
+    color:white;
+    text-align:center;
+    vertical-align:middle;
+    border:3px solid #d4af37;
+    ">
+
+    <h1 style="
+        font-family:Georgia, serif;
+        font-size:42px;
+        margin:0;
+        font-weight:bold;
+        letter-spacing:2px;
+        text-shadow:2px 2px 4px #000;
+        ">
+        Cristiano Ronaldo
+    </h1>
+
+    <p style="
+        font-family:Arial;
+        font-size:16px;
+        margin-top:12px;
+        letter-spacing:3px;
+        color:#f5d76e;
+        ">
+        CR7
+    </p>
+
+</td>
+
+
+<!-- CÉLULA 2 -->
+
+<td width="70%" height="600"
+    style="
+    background-color:#000;
+    padding:0;
+    text-align:center;
+    vertical-align:middle;
+    ">
+
+    <video width="100%" height="100%"
+           autoplay muted loop controls
+           style="
+           display:block;
+           width:100%;
+           height:100%;
+           object-fit:contain;
+           ">
+
+        <source src="WhatsApp Video 2026-09-21 at 20.47.30.mp4"
+                type="video/mp4">
+
+        Seu navegador não consegue reproduzir este vídeo.
+
+    </video>
+
+</td>
+
+
+</tr>
+
+
+<tr>
+
+<!-- CÉLULA 3 -->
+
+<td width="30%" height="600"
+    style="background-color:#fff0cc;">
+
+    <h3>Links sobre Cristiano Ronaldo</h3>
+
+
+    <a href="#" onclick="curiosidades(); return false;">
+    1 - Curiosidades sobre Cristiano Ronaldo
+    </a>
+
+    <br><br>
+
+
+    <a href="#" onclick="biografia(); return false;">
+    2 - Biografia de Cristiano Ronaldo
+    </a>
+
+    <br><br>
+
+
+    <a href="#" onclick="carreira(); return false;">
+    3 - Carreira de Cristiano Ronaldo
+    </a>
+
+    <br><br>
+
+
+    <a href="#" onclick="titulos(); return false;">
+    4 - Títulos e conquistas
+    </a>
+
+    <br><br>
+
+
+    <a href="#" onclick="recordes(); return false;">
+    5 - Recordes de Cristiano Ronaldo
+    </a>
+
+    <br><br><br>
+
+
+    <!-- FORMULÁRIO -->
+
+    <button onclick="mostrarFormulario()">
+        Formulário
+    </button>
+
+    <br><br>
+
+
+    <div id="formulario" style="display:none;">
+
+        <h4>Formulário</h4>
+
+        <div id="mensagem"
+             style="display:none; margin-bottom:15px;">
+        </div>
+
+        <form onsubmit="enviarFormulario(event)">
+
+            Nome:<br>
+
+            <input type="text"
+                   placeholder="Nome falso"
+                   required>
+
+            <br><br>
+
+            Email:<br>
+
+            <input type="email"
+                   placeholder="email@falso.com"
+                   required>
+
+            <br><br>
+
+            Telefone:<br>
+
+            <input type="tel"
+                   placeholder="000000000"
+                   required>
+
+            <br><br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+
+    </div>
+
+</td>
+
+
+<!-- CÉLULA 4 -->
+
+<td width="70%" height="600"
+    style="background-color:#f2e6ff;">
+
+    <h3>Área para acessar os sites</h3>
+
+    <iframe
+        id="site"
+        name="site"
+        width="95%"
+        height="500"
+        style="border:1px solid black;">
+    </iframe>
+
+</td>
+
+
+</tr>
+
+</table>
+
+</body>
+</html>
